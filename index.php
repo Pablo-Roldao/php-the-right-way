@@ -1,28 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+    #constants
+    const STATUS_PAID = 'paid';
 
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
+    echo STATUS_PAID;
 
-<body>
-    <h1>
-        <?= 'Hello Word!' ?>
-    </h1>
-    <p>My first paragraph.</p>
-    <?php
-        //comment 1
-        #comment 2
-        /*
-            comment 3
-        */
+    #variables
+    $firstName = 'Pablo';
 
-        $x = 10;
-        $y = 5;
+    echo $firstName;
 
-        echo '<p>' . $x . ', ' . $y . '</p>'
-    #comment?>
-</body>
+    $firstName = 'Maria';
 
-</html>
+    echo $firstName;
+
+    #variable variables
+
+    $foo = 'bar';
+    $$foo = 'baz';
+
+    echo $foo, $bar;
